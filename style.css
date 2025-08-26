@@ -1,0 +1,118 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #000;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #111;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fbc531;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar ul li a:hover {
+  color: #fbc531;
+}
+
+.user-icon {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 70vh;
+  background: url('/imagenes/Aatrox.png') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 0 60px;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 980px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #ccc;
+}
+
+/* Benefits Section */
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  background: #111;
+}
+
+.card {
+  background: #222;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card .icon {
+  font-size: 30px;
+  display: block;
+  margin-bottom: 10px;
+  color: #fbc531;
+}
+
+.card h3 {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
