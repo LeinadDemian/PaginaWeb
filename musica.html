@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Musica</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      padding: 40px;
+      justify-content: center;
+    }
+    .video-card {
+      width: 320px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+      overflow: hidden;
+      background: #222;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .video-card:hover {
+      transform: scale(1.05);
+    }
+    .video-card img {
+      width: 100%;
+      display: block;
+    }
+    .video-card a {
+      color: #fbc531;
+      text-decoration: none;
+      font-weight: bold;
+      display: block;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Temazos de YouTube</h1>
+  <div class="galeria">
+    <div class="video-card">
+      <a href="https://youtu.be/kfWH-PQBRT4?si=1df15kZJfD572jnM" target="_blank">
+        <img src="https://youtu.be/kfWH-PQBRT4?si=1df15kZJfD572jnM.jpg" alt="Video 1">
+        Video 1
+      </a>
+    </div>
+    <div class="video-card">
+      <a href="https://youtu.be/JjPtDl6EJ3o?si=ZsFIIWPwq6LGahbV" target="_blank">
+        <img src="https://youtu.be/JjPtDl6EJ3o?si=ZsFIIWPwq6LGahbV.jpg" alt="Video 2">
+        Video 2
+      </a>
+    </div>
+     <div class="video-card">
+      <a href="https://youtu.be/JjPtDl6EJ3o?si=ZsFIIWPwq6LGahbV" target="_blank">
+        <img src="https://youtu.be/JjPtDl6EJ3o?si=ZsFIIWPwq6LGahbV.jpg" alt="Video 2">
+        Video 3
+      </a>
+    </div>
+     <div class="video-card">
+      <a href="https://youtu.be/xOXfnMkN91g?si=zgXHRYCXnIAtcfGt" target="_blank">
+        <img src="https://youtu.be/xOXfnMkN91g?si=zgXHRYCXnIAtcfGt.jpg" alt="Video 2">
+        Video 4
+      </a>
+    </div>
+     <div class="video-card">
+      <a href="https://youtu.be/DeLLmFuMIGc?si=DZKfp8kwnPgyuVlK" target="_blank">
+        <img src="https://youtu.be/DeLLmFuMIGc?si=DZKfp8kwnPgyuVlK.jpg" alt="Video 2">
+      </a>
+    </div>- Agrega más videos repitiendo el bloque de arriba y cambiando el enlace y el ID del video -->
+  </div>
+</body>
+</html>
